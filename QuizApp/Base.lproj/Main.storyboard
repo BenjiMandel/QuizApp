@@ -52,11 +52,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quistion: 1/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uC0-gh-fva">
-                                <rect key="frame" x="291" y="64" width="103" height="21"/>
+                                <rect key="frame" x="273.5" y="64" width="120.5" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="lTu-zk-Hh8"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -65,6 +65,14 @@
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="SubmitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bzf-XR-i22"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xf-Dp-ZW2">
+                                <rect key="frame" x="20" y="64" width="112" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Start/Restart"/>
+                                <connections>
+                                    <action selector="StartRestartPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xgX-NK-Hm2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -77,10 +85,13 @@
                             <constraint firstItem="ps1-DQ-fFh" firstAttribute="centerX" secondItem="TgU-qu-6ht" secondAttribute="centerX" id="R5S-2S-lzD"/>
                             <constraint firstItem="H1d-ll-W5z" firstAttribute="top" secondItem="TgU-qu-6ht" secondAttribute="bottom" constant="25" id="SXG-N9-fxl"/>
                             <constraint firstItem="uC0-gh-fva" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="W5h-rp-BxM"/>
+                            <constraint firstItem="1xf-Dp-ZW2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YBy-hQ-Wta"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uC0-gh-fva" secondAttribute="trailing" constant="20" id="cff-6C-YgB"/>
                             <constraint firstItem="5r5-JD-TJ5" firstAttribute="top" secondItem="utN-bK-za3" secondAttribute="bottom" constant="89" id="fgl-ER-xE2"/>
                             <constraint firstItem="ps1-DQ-fFh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="234" id="hv6-TZ-UXU"/>
                             <constraint firstItem="TgU-qu-6ht" firstAttribute="top" secondItem="uC0-gh-fva" secondAttribute="bottom" constant="8" id="kCN-87-mYT"/>
+                            <constraint firstItem="1xf-Dp-ZW2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="nJL-G7-gYA"/>
+                            <constraint firstItem="uC0-gh-fva" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1xf-Dp-ZW2" secondAttribute="trailing" constant="8" symbolic="YES" id="oyz-MI-aIg"/>
                             <constraint firstItem="5r5-JD-TJ5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tQz-np-jYb"/>
                             <constraint firstItem="H1d-ll-W5z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ym8-uf-zOk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H1d-ll-W5z" secondAttribute="trailing" constant="20" id="z8C-yV-o9A"/>
