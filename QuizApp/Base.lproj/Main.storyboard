@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="29" translatesAutoresizingMaskIntoConstraints="NO" id="TgU-qu-6ht">
+                                <rect key="frame" x="87.5" y="93" width="239" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="duS-dv-teL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A english centance that contains a ..... that needs to be filled in.                                                  " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1d-ll-W5z">
+                                <rect key="frame" x="20" y="178" width="374" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="utN-bK-za3">
+                                <rect key="frame" x="20" y="267" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Ufv-tu-bff"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="TextFieldEditiongDidEnd:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="U7s-ws-x0H"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fill in the missing words" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ps1-DQ-fFh">
+                                <rect key="frame" x="116" y="234" width="182" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="182" id="Gy8-EW-IWi"/>
+                                    <constraint firstAttribute="height" constant="21" id="pCQ-B7-xXC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quistion: 1/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uC0-gh-fva">
+                                <rect key="frame" x="291" y="64" width="103" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="lTu-zk-Hh8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5r5-JD-TJ5">
+                                <rect key="frame" x="182.5" y="390" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="SubmitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bzf-XR-i22"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="utN-bK-za3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7jM-aN-CHy"/>
+                            <constraint firstItem="utN-bK-za3" firstAttribute="top" secondItem="ps1-DQ-fFh" secondAttribute="bottom" constant="12" id="9QV-m0-2B8"/>
+                            <constraint firstItem="ps1-DQ-fFh" firstAttribute="centerX" secondItem="utN-bK-za3" secondAttribute="centerX" id="BF5-h6-Tl0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="utN-bK-za3" secondAttribute="trailing" constant="20" id="Iu0-QW-USp"/>
+                            <constraint firstItem="ps1-DQ-fFh" firstAttribute="centerX" secondItem="TgU-qu-6ht" secondAttribute="centerX" id="R5S-2S-lzD"/>
+                            <constraint firstItem="H1d-ll-W5z" firstAttribute="top" secondItem="TgU-qu-6ht" secondAttribute="bottom" constant="25" id="SXG-N9-fxl"/>
+                            <constraint firstItem="uC0-gh-fva" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="W5h-rp-BxM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uC0-gh-fva" secondAttribute="trailing" constant="20" id="cff-6C-YgB"/>
+                            <constraint firstItem="5r5-JD-TJ5" firstAttribute="top" secondItem="utN-bK-za3" secondAttribute="bottom" constant="89" id="fgl-ER-xE2"/>
+                            <constraint firstItem="ps1-DQ-fFh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="234" id="hv6-TZ-UXU"/>
+                            <constraint firstItem="TgU-qu-6ht" firstAttribute="top" secondItem="uC0-gh-fva" secondAttribute="bottom" constant="8" id="kCN-87-mYT"/>
+                            <constraint firstItem="5r5-JD-TJ5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tQz-np-jYb"/>
+                            <constraint firstItem="H1d-ll-W5z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ym8-uf-zOk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H1d-ll-W5z" secondAttribute="trailing" constant="20" id="z8C-yV-o9A"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="AnswerOfQuestionTextField" destination="utN-bK-za3" id="7Ji-I9-pfk"/>
+                        <outlet property="QuestionLabel" destination="H1d-ll-W5z" id="3Rp-PW-i9B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
