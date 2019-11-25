@@ -75,22 +75,34 @@
                                     <action selector="StartRestartPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xgX-NK-Hm2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPx-6b-CAM">
+                                <rect key="frame" x="191" y="389" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="SubmitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cr7-Vj-rCg"/>
+                                    <action selector="nextButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YJb-gG-FKB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="utN-bK-za3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7jM-aN-CHy"/>
                             <constraint firstItem="utN-bK-za3" firstAttribute="top" secondItem="ps1-DQ-fFh" secondAttribute="bottom" constant="12" id="9QV-m0-2B8"/>
                             <constraint firstItem="ps1-DQ-fFh" firstAttribute="centerX" secondItem="utN-bK-za3" secondAttribute="centerX" id="BF5-h6-Tl0"/>
+                            <constraint firstItem="EPx-6b-CAM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FHE-cR-ZyM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="utN-bK-za3" secondAttribute="trailing" constant="20" id="Iu0-QW-USp"/>
+                            <constraint firstItem="utN-bK-za3" firstAttribute="top" secondItem="ps1-DQ-fFh" secondAttribute="bottom" constant="12" id="LdU-FN-NHI"/>
                             <constraint firstItem="ps1-DQ-fFh" firstAttribute="centerX" secondItem="TgU-qu-6ht" secondAttribute="centerX" id="R5S-2S-lzD"/>
                             <constraint firstItem="H1d-ll-W5z" firstAttribute="top" secondItem="TgU-qu-6ht" secondAttribute="bottom" constant="25" id="SXG-N9-fxl"/>
                             <constraint firstItem="uC0-gh-fva" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="W5h-rp-BxM"/>
                             <constraint firstItem="1xf-Dp-ZW2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YBy-hQ-Wta"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uC0-gh-fva" secondAttribute="trailing" constant="20" id="cff-6C-YgB"/>
                             <constraint firstItem="5r5-JD-TJ5" firstAttribute="top" secondItem="utN-bK-za3" secondAttribute="bottom" constant="89" id="fgl-ER-xE2"/>
+                            <constraint firstItem="EPx-6b-CAM" firstAttribute="top" secondItem="utN-bK-za3" secondAttribute="bottom" constant="88" id="fow-da-NmD"/>
                             <constraint firstItem="ps1-DQ-fFh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="234" id="hv6-TZ-UXU"/>
                             <constraint firstItem="TgU-qu-6ht" firstAttribute="top" secondItem="uC0-gh-fva" secondAttribute="bottom" constant="8" id="kCN-87-mYT"/>
                             <constraint firstItem="1xf-Dp-ZW2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="nJL-G7-gYA"/>
+                            <constraint firstItem="ps1-DQ-fFh" firstAttribute="top" secondItem="H1d-ll-W5z" secondAttribute="bottom" constant="15" id="o3r-by-SSa"/>
                             <constraint firstItem="uC0-gh-fva" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1xf-Dp-ZW2" secondAttribute="trailing" constant="8" symbolic="YES" id="oyz-MI-aIg"/>
                             <constraint firstItem="5r5-JD-TJ5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tQz-np-jYb"/>
                             <constraint firstItem="H1d-ll-W5z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ym8-uf-zOk"/>
@@ -100,7 +112,10 @@
                     </view>
                     <connections>
                         <outlet property="AnswerOfQuestionTextField" destination="utN-bK-za3" id="7Ji-I9-pfk"/>
+                        <outlet property="NextButtonOutlet" destination="EPx-6b-CAM" id="GTL-Bg-8pR"/>
                         <outlet property="QuestionLabel" destination="H1d-ll-W5z" id="3Rp-PW-i9B"/>
+                        <outlet property="QuestionNumberLabel" destination="uC0-gh-fva" id="QV3-Lv-aM1"/>
+                        <outlet property="SubmitButtonOutlet" destination="5r5-JD-TJ5" id="xeW-CP-rXM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
